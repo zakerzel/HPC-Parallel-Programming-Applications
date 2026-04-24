@@ -1,0 +1,75 @@
+\documentclass[conference]{IEEEtran}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+\title{High Performance Computing\\
+Unit 3 Final Assignment}
+
+\author{\IEEEauthorblockN{Gael Alberto Lara Pe\~na}
+\IEEEauthorblockA{Universidad Polit\'ecnica de Yucat\'an\\
+Data Engineering}}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This report presents the development and evaluation of four high performance computing exercises. Each exercise includes a serial baseline and at least one parallel implementation using Python multiprocessing, MPI, or both. The goal is to analyze correctness, runtime behavior, scalability, and the practical advantages and limitations of each parallel strategy.
+\end{abstract}
+
+\begin{IEEEkeywords}
+High Performance Computing, multiprocessing, MPI, matrix multiplication, image processing, cellular automata, k-means
+\end{IEEEkeywords}
+
+\section{Introduction}
+This report documents the implementation and evaluation of four final exercises for the High Performance Computing course. The central objective is to compare serial and parallel strategies under reproducible conditions and discuss when parallelism offers meaningful performance improvements.
+
+\section{Exercise 1: Parallel Matrix Multiplication}
+\subsection{Evidence of Completeness}
+Describe the implemented serial baseline, row-based multiprocessing, column-based multiprocessing, block-based strategy, MPI version, and Strassen-based analysis. Include screenshots, code fragments, and correctness tests.
+
+\subsection{Results}
+Include runtime tables for increasing matrix sizes, speedup, and efficiency.
+
+\subsection{Discussion}
+Discuss communication overhead, data movement, load imbalance, and sparse vs dense behavior.
+
+\section{Exercise 2: Parallel Cell Image Processing and Morphological Characterization}
+\subsection{Evidence of Completeness}
+Describe the dataset, segmentation pipeline, extracted morphological measurements, and multiprocessing strategy. Include example outputs and annotated images.
+
+\subsection{Results}
+Include serial vs parallel timing and summary tables per image.
+
+\subsection{Discussion}
+Discuss segmentation quality, model limitations, and the effect of errors on final measurements.
+
+\section{Exercise 3: Forest Fire Cellular Automaton Driven by NASA FIRMS Data}
+\subsection{Evidence of Completeness}
+Describe data acquisition, preprocessing to a grid, state rules, serial automaton, and MPI domain decomposition. Include snapshots of the simulation.
+
+\subsection{Results}
+Include runtime comparison, grid sizes, process counts, and temporal evolution examples.
+
+\subsection{Discussion}
+Discuss scientific limitations, the interpretation of FIRMS hotspots, and the scalability of border exchange.
+
+\section{Exercise 4: Parallel K-Means Clustering}
+\subsection{Evidence of Completeness}
+Describe dataset loading, preprocessing, serial K-Means, MPI K-Means, and the use of collective communication to aggregate local statistics.
+
+\subsection{Results}
+Include timing per iteration, total runtime, convergence plots, and comparison for multiple values of $k$ and process counts.
+
+\subsection{Discussion}
+Discuss communication costs, synchronization, dataset size effects, and when parallelization becomes beneficial.
+
+\section{Conclusion}
+Summarize the main findings across the four exercises, emphasizing when parallelization yielded meaningful gains and when overhead limited the benefits.
+
+\end{document}
