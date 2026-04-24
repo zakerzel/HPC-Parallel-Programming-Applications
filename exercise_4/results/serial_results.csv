@@ -1,2 +1,0 @@
-variant,samples,features,k,iterations,runtime_s,inertia,silhouette
-serial,10000,20,5,17,0.23685898999997335,48543.87318066119,0.5019165785568486
