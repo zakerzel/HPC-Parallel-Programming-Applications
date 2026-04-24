@@ -1,0 +1,10 @@
+method,n,density,time_s,nnz,correct
+serial_dense_from_sparse,256,0.01,0.0005366000041249208,655,
+parallel_rows_dense_from_sparse,256,0.01,1.4145957000000635,655,True
+scipy_sparse_csr,256,0.01,0.00021189999824855477,655,True
+serial_dense_from_sparse,256,0.05,0.00056669999321457,3277,
+parallel_rows_dense_from_sparse,256,0.05,1.432363500003703,3277,True
+scipy_sparse_csr,256,0.05,0.0006806999954278581,3277,True
+serial_dense_from_sparse,512,0.01,0.002760799994575791,2621,
+parallel_rows_dense_from_sparse,512,0.01,1.4523833000057493,2621,True
+scipy_sparse_csr,512,0.01,0.0003079999951296486,2621,True
